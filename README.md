@@ -1,3 +1,5 @@
 # PHP-Fundamentals
-- 30DaysOfPHP
-- 3DdaysOfCod3
+- #100DaysOfPHP
+- #100DaysOfCode
+- #LearnBySelfTaught
+- #Consistency
