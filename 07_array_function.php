@@ -35,4 +35,23 @@
     $chuck_arrays = array_chunk($user_names, 3);
 
     print_r($chuck_arrays);
+
+    //!Concatenate array
+
+    $odd_num1 = [1,3,5];
+    $odd_num2 = [7, 9 , 11];
+    $total_odd = array_merge($odd_num1, $odd_num2);
+
+    //!Spread operator
+
+    $even_num1 = [0,2,4,6, 8];
+    $even_num2 = [10,12,14, 16, 18];
+    $total_even = [...$even_num1, ...$even_num2];
+    print_r($total_odd);
+
+    //!Combine method
+    //! array types must be thesame else it returns an error message
+    $combine_array = array_combine($even_num1, $user_names);
+
+    print_r($combine_array);
 ?>
