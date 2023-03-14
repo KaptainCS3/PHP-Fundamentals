@@ -50,7 +50,7 @@
     print_r($total_odd);
 
     //!Combine method
-    //! array types must be thesame else it returns an error message
+    //! array types must be the same else it returns an error message
     $combine_array = array_combine($even_num1, $user_names);
 
     print_r($combine_array);
