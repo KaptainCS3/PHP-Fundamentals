@@ -51,7 +51,42 @@
 
     //!Combine method
     //! array types must be the same else it returns an error message
-    $combine_array = array_combine($even_num1, $user_names);
-
+    $combine_array = array_combine($even_num1, $even_num2);
     print_r($combine_array);
+
+    //!Key method
+    //!Returns keys/associates of an array
+    $keys = array_keys($combine_array);
+    print_r($keys);
+
+    //!Flip method
+    //!flips the key to value and vice versal
+    $flipped_array = array_flip($combine_array);
+    print_r($flipped_array);
+
+    //!Range method
+    $numbers = range(1, 10);
+    print_r($numbers);
+
+    //!Map method
+    $square_array = array_map(function($num){
+        return "square of $num: $num X $num = " . $num * $num;
+    }, $numbers);
+
+    print_r($square_array);
+
+    //!Filter method
+
+    $is_even = array_filter($numbers, function($num){
+        return $num % 2 === 0;
+    });
+
+    print_r($is_even);
+
+    //!Reduce method
+
+    $is_reduce = array_reduce($numbers, function($current ,$num){
+        return $current + $num;
+    });
+    print_r($is_reduce);
 ?>
