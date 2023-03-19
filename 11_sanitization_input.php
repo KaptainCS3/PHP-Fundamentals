@@ -8,12 +8,12 @@
 if (isset($_POST['submit'])) {
     //! sanitize input alternative 1
     $name = '<h3>' . htmlspecialchars($_POST['name']) . '</h3>';
-    $password = '<h3>' . htmlspecialchars($_POST['password']) . '</h3>';
+    $password = '<h3>' . ($_POST['password']) . '</h3>';
     echo $name;
     echo $password;
     //! sanitize input alternative 2
     $name = '<h3>' . filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS) . '</h3>';
-    $password = '<h3>' . filter_input(INPUT_POST, 'password', FILTER_SANITIZE_SPECIAL_CHARS) . '</h3>';
+    $password = '<h3>' . ($_POST['password']) . '</h3>';
     echo $name;
     echo $password;
 } 
